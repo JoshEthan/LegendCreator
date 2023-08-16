@@ -27,9 +27,15 @@
     <ClInclude Include="src\LegendCreator\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\LegendCreator\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\LegendCreator\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LegendCreator\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

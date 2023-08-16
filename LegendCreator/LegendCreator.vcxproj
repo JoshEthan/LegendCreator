@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\LegendCreator\Log.h" />
     <ClInclude Include="src\LegendCreator\Application.h" />
     <ClInclude Include="src\LegendCreator\Core.h" />
     <ClInclude Include="src\LegendCreator.h" />
     <ClInclude Include="src\LegendCreator\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\LegendCreator\Log.cpp" />
     <ClCompile Include="src\LegendCreator\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -70,6 +72,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>LC_PLATFORM_WINDOWS;LC_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)LegendCreator\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -84,6 +87,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>LC_PLATFORM_WINDOWS;LC_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)LegendCreator\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

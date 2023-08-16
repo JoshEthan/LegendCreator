@@ -1,0 +1,3 @@
+[submodule "LegendCreator/vendor/spdlog"]
+	path = LegendCreator/vendor/spdlog
+	url = https://github.com/gabime/spdlog
