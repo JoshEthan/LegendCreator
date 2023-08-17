@@ -4,6 +4,9 @@
     <Filter Include="LegendCreator">
       <UniqueIdentifier>{44BAA21B-B07A-1E52-79B5-67CFE534632E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="LegendCreator\Events">
+      <UniqueIdentifier>{A8B1FFD2-9440-899C-3D5F-9D9729CD9942}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\LegendCreator.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\LegendCreator\EntryPoint.h">
       <Filter>LegendCreator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LegendCreator\Events\ApplicationEvent.h">
+      <Filter>LegendCreator\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LegendCreator\Events\Event.h">
+      <Filter>LegendCreator\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LegendCreator\Events\KeyEvent.h">
+      <Filter>LegendCreator\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LegendCreator\Events\MouseEvent.h">
+      <Filter>LegendCreator\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\LegendCreator\Log.h">
       <Filter>LegendCreator</Filter>
