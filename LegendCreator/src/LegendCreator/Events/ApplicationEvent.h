@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace LegendCreator {
 	class LEGENDCREATOR_API WindowResizeEvent : public Event
 	{

@@ -18,6 +18,9 @@ project "LegendCreator"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir  ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "lcpch.h"
+	pchsource "LegendCreator/src/lcpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

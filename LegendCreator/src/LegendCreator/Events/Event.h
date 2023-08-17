@@ -2,9 +2,6 @@
 
 #include "LegendCreator/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace LegendCreator {
 	enum class EventType
 	{

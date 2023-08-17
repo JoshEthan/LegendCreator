@@ -1,3 +1,4 @@
+#include "lcpch.h"
 #include "Application.h"
 
 #include "LegendCreator/Events/ApplicationEvent.h"

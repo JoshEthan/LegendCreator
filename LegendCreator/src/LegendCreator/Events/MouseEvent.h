@@ -3,8 +3,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace LegendCreator {
 
 	// Mouse MOVED
