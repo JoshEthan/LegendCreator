@@ -1,6 +1,7 @@
 #pragma once
 
 #include "LegendCreator/Core.h"
+#include "lcpch.h"
 
 namespace LegendCreator {
 	enum class EventType
