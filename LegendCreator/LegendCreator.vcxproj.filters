@@ -35,6 +35,8 @@
       <Filter>LegendCreator</Filter>
     </ClInclude>
     <ClInclude Include="src\lcpch.h" />
+    <ClInclude Include="src\LegendCreator\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\LegendCreator\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>LegendCreator</Filter>
     </ClCompile>
     <ClCompile Include="src\lcpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
