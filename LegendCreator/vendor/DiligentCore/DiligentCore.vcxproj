@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|x64">
+      <Configuration>Dist</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3E50F5FD-2AB3-84A2-D338-BD58BF7A5025}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DiligentCore</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\Debug-windows-x86_64\DiligentCore\</OutDir>
+    <IntDir>bin-int\Debug-windows-x86_64\DiligentCore\</IntDir>
+    <TargetName>DiligentCore</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\Release-windows-x86_64\DiligentCore\</OutDir>
+    <IntDir>bin-int\Release-windows-x86_64\DiligentCore\</IntDir>
+    <TargetName>DiligentCore</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <OutDir>bin\Dist-windows-x86_64\DiligentCore\</OutDir>
+    <IntDir>bin-int\Dist-windows-x86_64\DiligentCore\</IntDir>
+    <TargetName>DiligentCore</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MT %(AdditionalOptions)</AdditionalOptions>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Common\interface\AdvancedMath.hpp" />
+    <ClInclude Include="include\Common\interface\Align.hpp" />
+    <ClInclude Include="include\Common\interface\Array2DTools.hpp" />
+    <ClInclude Include="include\Common\interface\BasicFileStream.hpp" />
+    <ClInclude Include="include\Common\interface\BasicMath.hpp" />
+    <ClInclude Include="include\Common\interface\CallbackWrapper.hpp" />
+    <ClInclude Include="include\Common\interface\Cast.hpp" />
+    <ClInclude Include="include\Common\interface\CompilerDefinitions.h" />
+    <ClInclude Include="include\Common\interface\DataBlobImpl.hpp" />
+    <ClInclude Include="include\Common\interface\DefaultRawMemoryAllocator.hpp" />
+    <ClInclude Include="include\Common\interface\DummyReferenceCounters.hpp" />
+    <ClInclude Include="include\Common\interface\DynamicLinearAllocator.hpp" />
+    <ClInclude Include="include\Common\interface\FastRand.hpp" />
+    <ClInclude Include="include\Common\interface\FileWrapper.hpp" />
+    <ClInclude Include="include\Common\interface\FilteringTools.hpp" />
+    <ClInclude Include="include\Common\interface\FixedBlockMemoryAllocator.hpp" />
+    <ClInclude Include="include\Common\interface\FixedLinearAllocator.hpp" />
+    <ClInclude Include="include\Common\interface\HashUtils.hpp" />
+    <ClInclude Include="include\Common\interface\LRUCache.hpp" />
+    <ClInclude Include="include\Common\interface\MemoryFileStream.hpp" />
+    <ClInclude Include="include\Common\interface\ObjectBase.hpp" />
+    <ClInclude Include="include\Common\interface\ParsingTools.hpp" />
+    <ClInclude Include="include\Common\interface\RefCntAutoPtr.hpp" />
+    <ClInclude Include="include\Common\interface\RefCountedObjectImpl.hpp" />
+    <ClInclude Include="include\Common\interface\STDAllocator.hpp" />
+    <ClInclude Include="include\Common\interface\Serializer.hpp" />
+    <ClInclude Include="include\Common\interface\SpinLock.hpp" />
+    <ClInclude Include="include\Common\interface\StringDataBlobImpl.hpp" />
+    <ClInclude Include="include\Common\interface\StringPool.hpp" />
+    <ClInclude Include="include\Common\interface\StringTools.h" />
+    <ClInclude Include="include\Common\interface\StringTools.hpp" />
+    <ClInclude Include="include\Common\interface\ThreadPool.hpp" />
+    <ClInclude Include="include\Common\interface\ThreadSignal.hpp" />
+    <ClInclude Include="include\Common\interface\Timer.hpp" />
+    <ClInclude Include="include\Common\interface\UniqueIdentifier.hpp" />
+    <ClInclude Include="include\Graphics\Archiver\interface\Archiver.h" />
+    <ClInclude Include="include\Graphics\Archiver\interface\ArchiverFactory.h" />
+    <ClInclude Include="include\Graphics\Archiver\interface\ArchiverFactoryLoader.h" />
+    <ClInclude Include="include\Graphics\Archiver\interface\SerializationDevice.h" />
+    <ClInclude Include="include\Graphics\Archiver\interface\SerializedPipelineState.h" />
+    <ClInclude Include="include\Graphics\Archiver\interface\SerializedShader.h" />
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\ColorConversion.h" />
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\DynamicAtlasManager.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\GraphicsAccessories.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\GraphicsTypesOutputInserters.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\ResourceReleaseQueue.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\RingBuffer.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\SRBMemoryAllocator.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\VariableSizeAllocationsManager.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\VariableSizeGPUAllocationsManager.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\APIInfo.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\BlendState.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\BottomLevelAS.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Buffer.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\BufferView.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\CommandList.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\CommandQueue.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Constants.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Dearchiver.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\DepthStencilState.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\DeviceContext.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\DeviceMemory.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\DeviceObject.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\EngineFactory.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Fence.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Framebuffer.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\GraphicsTypes.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\GraphicsTypesX.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\InputLayout.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\LoadEngineDll.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\PipelineResourceSignature.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\PipelineState.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\PipelineStateCache.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Query.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\RasterizerState.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\RenderDevice.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\RenderPass.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\ResourceMapping.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Sampler.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Shader.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\ShaderBindingTable.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\ShaderResourceBinding.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\ShaderResourceVariable.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\SwapChain.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Texture.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\TextureView.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\TopLevelAS.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\BufferD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\BufferViewD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\DeviceContextD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\DeviceMemoryD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\EngineFactoryD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\FenceD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\PipelineStateD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\QueryD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\RenderDeviceD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\SamplerD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\ShaderD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\ShaderResourceBindingD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\SwapChainD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\TextureD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\TextureViewD3D11.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\BottomLevelASD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\BufferD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\BufferViewD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\CommandQueueD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\DeviceContextD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\DeviceMemoryD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\EngineFactoryD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\FenceD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\PipelineStateCacheD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\PipelineStateD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\QueryD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\RenderDeviceD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\SamplerD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\ShaderBindingTableD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\ShaderD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\ShaderResourceBindingD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\SwapChainD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\TextureD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\TextureViewD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\TopLevelASD3D12.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3DBase\interface\ShaderD3D.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineD3DBase\interface\ShaderResourceVariableD3D.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\BaseInterfacesGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\BufferGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\BufferViewGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\DeviceContextGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\EngineFactoryOpenGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\FenceGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\PipelineStateGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\QueryGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\RenderDeviceGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\RenderDeviceGLES.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\SamplerGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\ShaderGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\ShaderResourceBindingGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\SwapChainGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\TextureGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\TextureViewGL.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\BottomLevelASVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\BufferViewVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\BufferVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\CommandQueueVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\DeviceContextVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\DeviceMemoryVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\EngineFactoryVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\FenceVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\FramebufferVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\PipelineStateCacheVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\PipelineStateVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\QueryVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\RenderDeviceVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\RenderPassVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\SamplerVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\ShaderBindingTableVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\ShaderResourceBindingVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\ShaderVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\SwapChainVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\TextureViewVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\TextureVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\TopLevelASVk.h" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\BufferSuballocator.h" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\BytecodeCache.h" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\CommonlyUsedStates.h" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\DurationQueryHelper.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\DynamicBuffer.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\DynamicTextureArray.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\DynamicTextureAtlas.h" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\GPUCompletionAwaitQueue.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\GraphicsUtilities.h" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\MapHelper.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\RenderStateCache.h" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\RenderStateCache.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\ScopedDebugGroup.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\ScopedQueryHelper.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\ScreenCapture.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\ShaderMacroHelper.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\StreamingBuffer.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\TextureUploader.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\TextureUploaderBase.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\TextureUploaderD3D11.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\TextureUploaderD3D12_Vk.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\TextureUploaderGL.hpp" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\VertexPool.h" />
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\XXH128Hasher.hpp" />
+    <ClInclude Include="include\Graphics\HLSL2GLSLConverterLib\interface\HLSL2GLSLConverter.h" />
+    <ClInclude Include="include\Platforms\Basic\interface\BasicFileSystem.hpp" />
+    <ClInclude Include="include\Platforms\Basic\interface\BasicPlatformDebug.hpp" />
+    <ClInclude Include="include\Platforms\Basic\interface\BasicPlatformMisc.hpp" />
+    <ClInclude Include="include\Platforms\Basic\interface\DebugUtilities.hpp" />
+    <ClInclude Include="include\Platforms\Basic\interface\StandardFile.hpp" />
+    <ClInclude Include="include\Platforms\Win32\interface\Win32Debug.hpp" />
+    <ClInclude Include="include\Platforms\Win32\interface\Win32FileSystem.hpp" />
+    <ClInclude Include="include\Platforms\Win32\interface\Win32NativeWindow.h" />
+    <ClInclude Include="include\Platforms\Win32\interface\Win32PlatformDefinitions.h" />
+    <ClInclude Include="include\Platforms\Win32\interface\Win32PlatformMisc.hpp" />
+    <ClInclude Include="include\Platforms\Win32\interface\WinHPostface.h" />
+    <ClInclude Include="include\Platforms\Win32\interface\WinHPreface.h" />
+    <ClInclude Include="include\Platforms\interface\FileSystem.hpp" />
+    <ClInclude Include="include\Platforms\interface\Intrinsics.hpp" />
+    <ClInclude Include="include\Platforms\interface\NativeWindow.h" />
+    <ClInclude Include="include\Platforms\interface\PlatformDebug.hpp" />
+    <ClInclude Include="include\Platforms\interface\PlatformDefinitions.h" />
+    <ClInclude Include="include\Platforms\interface\PlatformMisc.hpp" />
+    <ClInclude Include="include\Primitives\interface\BasicTypes.h" />
+    <ClInclude Include="include\Primitives\interface\CheckBaseStructAlignment.hpp" />
+    <ClInclude Include="include\Primitives\interface\CommonDefinitions.h" />
+    <ClInclude Include="include\Primitives\interface\DataBlob.h" />
+    <ClInclude Include="include\Primitives\interface\DebugOutput.h" />
+    <ClInclude Include="include\Primitives\interface\DefineGlobalFuncHelperMacros.h" />
+    <ClInclude Include="include\Primitives\interface\DefineInterfaceHelperMacros.h" />
+    <ClInclude Include="include\Primitives\interface\Errors.hpp" />
+    <ClInclude Include="include\Primitives\interface\FileStream.h" />
+    <ClInclude Include="include\Primitives\interface\FlagEnum.h" />
+    <ClInclude Include="include\Primitives\interface\FormatString.hpp" />
+    <ClInclude Include="include\Primitives\interface\InterfaceID.h" />
+    <ClInclude Include="include\Primitives\interface\MemoryAllocator.h" />
+    <ClInclude Include="include\Primitives\interface\Object.h" />
+    <ClInclude Include="include\Primitives\interface\ReferenceCounters.h" />
+    <ClInclude Include="include\Primitives\interface\UndefGlobalFuncHelperMacros.h" />
+    <ClInclude Include="include\Primitives\interface\UndefInterfaceHelperMacros.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

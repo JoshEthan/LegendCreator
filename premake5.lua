@@ -10,6 +10,12 @@ workspace "LegendCreator"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["DiligentCore"] = "LegendCreator/vendor/DiligentCore/include"
+
+include "LegendCreator/vendor/DiligentCore"
+
 project "LegendCreator"
 	location "LegendCreator"
 	kind "SharedLib"
@@ -30,7 +36,13 @@ project "LegendCreator"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.DiligentCore}"
+	}
+
+	links
+	{
+		"DiligentCore"
 	}
 
 	filter "system:windows"

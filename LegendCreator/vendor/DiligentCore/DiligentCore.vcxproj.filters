@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{8EEA3EAC-7A8C-6982-6347-7DD64F88F0D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\interface">
+      <UniqueIdentifier>{0E7C6127-FA74-8079-23A7-65FE0FFF5F85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{1653CE33-0220-293F-2B39-17E717655ECD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Archiver">
+      <UniqueIdentifier>{F94707B7-655E-054D-AED5-906E1A2BD6D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\Archiver\interface">
+      <UniqueIdentifier>{39DBC1B7-A5E8-EF9D-2ECF-EB889ADBBB54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsAccessories">
+      <UniqueIdentifier>{0ACA7DA5-F684-6D51-9F3C-E69B8BD6B7E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsAccessories\interface">
+      <UniqueIdentifier>{8AE6EAA0-7638-C290-5F57-FFA04B48DB79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngine">
+      <UniqueIdentifier>{ACEF1442-1827-5DD9-2131-C1FC8DE783D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngine\interface">
+      <UniqueIdentifier>{ACFE1EF1-186D-7470-6156-2F70CD036A0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngineD3D11">
+      <UniqueIdentifier>{893CA5C5-75F7-9471-1EAF-0DBC0A49DF01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngineD3D11\interface">
+      <UniqueIdentifier>{C9C386CF-B515-5EBF-9E34-9BCF8A2577A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngineD3D12">
+      <UniqueIdentifier>{8A3CA5C5-76F7-9471-1FAF-0DBC0B49DF01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngineD3D12\interface">
+      <UniqueIdentifier>{0A79E354-F6CA-BA44-DFE9-F754CBDAD32D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngineD3DBase">
+      <UniqueIdentifier>{A2B0F0C3-8ED6-BA2A-771C-40F663E1DFF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngineD3DBase\interface">
+      <UniqueIdentifier>{22EBC06F-0E68-B4B2-37E5-B4C623C15046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngineOpenGL">
+      <UniqueIdentifier>{71825898-DD9A-3FC2-A647-CF5B121FD45B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngineOpenGL\interface">
+      <UniqueIdentifier>{B18BD8B6-1D1B-9AA1-2617-7BB99225D5AD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngineVulkan">
+      <UniqueIdentifier>{BDE60AA9-29FF-F1D2-F2AB-816C5E83866C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsEngineVulkan\interface">
+      <UniqueIdentifier>{FDBE5D9C-694E-1F87-724A-009FDE585A93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsTools">
+      <UniqueIdentifier>{C7C01003-B3BA-3955-9C27-D06588C09FC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\GraphicsTools\interface">
+      <UniqueIdentifier>{872D9B28-737E-866A-9CE2-742C889219D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\HLSL2GLSLConverterLib">
+      <UniqueIdentifier>{AB966338-97BC-2D9F-8002-B36A6CC7526B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics\HLSL2GLSLConverterLib\interface">
+      <UniqueIdentifier>{6BB0CD95-572D-C1D8-80AA-C1EC6C865D6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms">
+      <UniqueIdentifier>{DDACA145-4917-56BC-9255-0762FEFE3311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\Basic">
+      <UniqueIdentifier>{4E0DBD41-BA98-2A06-C3A9-ADFA2FB48606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\Basic\interface">
+      <UniqueIdentifier>{CE0EFA87-3AD1-2D12-8381-BC9EEF8206F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\Win32">
+      <UniqueIdentifier>{7F563D43-EBE1-AA07-F4F2-2DFC60FD0608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\Win32\interface">
+      <UniqueIdentifier>{3F49E85F-AB0B-1CEA-F4BB-AA7660BDF4C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\interface">
+      <UniqueIdentifier>{1DAD3ACC-890E-18DA-127C-5E8C7EDC4E99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives">
+      <UniqueIdentifier>{31164E03-1DCE-8F50-86D5-68AC72AC2A41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\interface">
+      <UniqueIdentifier>{71CFA959-5D5E-3323-067D-471EF2EA43C9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Common\interface\AdvancedMath.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\Align.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\Array2DTools.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\BasicFileStream.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\BasicMath.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\CallbackWrapper.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\Cast.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\CompilerDefinitions.h">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\DataBlobImpl.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\DefaultRawMemoryAllocator.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\DummyReferenceCounters.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\DynamicLinearAllocator.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\FastRand.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\FileWrapper.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\FilteringTools.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\FixedBlockMemoryAllocator.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\FixedLinearAllocator.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\HashUtils.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\LRUCache.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\MemoryFileStream.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\ObjectBase.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\ParsingTools.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\RefCntAutoPtr.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\RefCountedObjectImpl.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\STDAllocator.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\Serializer.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\SpinLock.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\StringDataBlobImpl.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\StringPool.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\StringTools.h">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\StringTools.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\ThreadPool.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\ThreadSignal.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\Timer.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Common\interface\UniqueIdentifier.hpp">
+      <Filter>Common\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\Archiver\interface\Archiver.h">
+      <Filter>Graphics\Archiver\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\Archiver\interface\ArchiverFactory.h">
+      <Filter>Graphics\Archiver\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\Archiver\interface\ArchiverFactoryLoader.h">
+      <Filter>Graphics\Archiver\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\Archiver\interface\SerializationDevice.h">
+      <Filter>Graphics\Archiver\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\Archiver\interface\SerializedPipelineState.h">
+      <Filter>Graphics\Archiver\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\Archiver\interface\SerializedShader.h">
+      <Filter>Graphics\Archiver\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\ColorConversion.h">
+      <Filter>Graphics\GraphicsAccessories\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\DynamicAtlasManager.hpp">
+      <Filter>Graphics\GraphicsAccessories\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\GraphicsAccessories.hpp">
+      <Filter>Graphics\GraphicsAccessories\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\GraphicsTypesOutputInserters.hpp">
+      <Filter>Graphics\GraphicsAccessories\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\ResourceReleaseQueue.hpp">
+      <Filter>Graphics\GraphicsAccessories\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\RingBuffer.hpp">
+      <Filter>Graphics\GraphicsAccessories\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\SRBMemoryAllocator.hpp">
+      <Filter>Graphics\GraphicsAccessories\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\VariableSizeAllocationsManager.hpp">
+      <Filter>Graphics\GraphicsAccessories\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsAccessories\interface\VariableSizeGPUAllocationsManager.hpp">
+      <Filter>Graphics\GraphicsAccessories\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\APIInfo.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\BlendState.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\BottomLevelAS.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Buffer.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\BufferView.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\CommandList.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\CommandQueue.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Constants.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Dearchiver.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\DepthStencilState.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\DeviceContext.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\DeviceMemory.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\DeviceObject.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\EngineFactory.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Fence.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Framebuffer.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\GraphicsTypes.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\GraphicsTypesX.hpp">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\InputLayout.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\LoadEngineDll.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\PipelineResourceSignature.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\PipelineState.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\PipelineStateCache.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Query.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\RasterizerState.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\RenderDevice.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\RenderPass.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\ResourceMapping.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Sampler.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Shader.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\ShaderBindingTable.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\ShaderResourceBinding.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\ShaderResourceVariable.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\SwapChain.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\Texture.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\TextureView.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngine\interface\TopLevelAS.h">
+      <Filter>Graphics\GraphicsEngine\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\BufferD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\BufferViewD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\DeviceContextD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\DeviceMemoryD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\EngineFactoryD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\FenceD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\PipelineStateD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\QueryD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\RenderDeviceD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\SamplerD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\ShaderD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\ShaderResourceBindingD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\SwapChainD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\TextureD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D11\interface\TextureViewD3D11.h">
+      <Filter>Graphics\GraphicsEngineD3D11\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\BottomLevelASD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\BufferD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\BufferViewD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\CommandQueueD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\DeviceContextD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\DeviceMemoryD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\EngineFactoryD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\FenceD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\PipelineStateCacheD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\PipelineStateD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\QueryD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\RenderDeviceD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\SamplerD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\ShaderBindingTableD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\ShaderD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\ShaderResourceBindingD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\SwapChainD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\TextureD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\TextureViewD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3D12\interface\TopLevelASD3D12.h">
+      <Filter>Graphics\GraphicsEngineD3D12\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3DBase\interface\ShaderD3D.h">
+      <Filter>Graphics\GraphicsEngineD3DBase\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineD3DBase\interface\ShaderResourceVariableD3D.h">
+      <Filter>Graphics\GraphicsEngineD3DBase\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\BaseInterfacesGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\BufferGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\BufferViewGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\DeviceContextGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\EngineFactoryOpenGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\FenceGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\PipelineStateGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\QueryGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\RenderDeviceGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\RenderDeviceGLES.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\SamplerGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\ShaderGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\ShaderResourceBindingGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\SwapChainGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\TextureGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineOpenGL\interface\TextureViewGL.h">
+      <Filter>Graphics\GraphicsEngineOpenGL\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\BottomLevelASVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\BufferViewVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\BufferVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\CommandQueueVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\DeviceContextVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\DeviceMemoryVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\EngineFactoryVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\FenceVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\FramebufferVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\PipelineStateCacheVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\PipelineStateVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\QueryVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\RenderDeviceVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\RenderPassVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\SamplerVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\ShaderBindingTableVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\ShaderResourceBindingVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\ShaderVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\SwapChainVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\TextureViewVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\TextureVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsEngineVulkan\interface\TopLevelASVk.h">
+      <Filter>Graphics\GraphicsEngineVulkan\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\BufferSuballocator.h">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\BytecodeCache.h">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\CommonlyUsedStates.h">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\DurationQueryHelper.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\DynamicBuffer.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\DynamicTextureArray.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\DynamicTextureAtlas.h">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\GPUCompletionAwaitQueue.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\GraphicsUtilities.h">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\MapHelper.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\RenderStateCache.h">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\RenderStateCache.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\ScopedDebugGroup.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\ScopedQueryHelper.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\ScreenCapture.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\ShaderMacroHelper.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\StreamingBuffer.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\TextureUploader.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\TextureUploaderBase.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\TextureUploaderD3D11.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\TextureUploaderD3D12_Vk.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\TextureUploaderGL.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\VertexPool.h">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\GraphicsTools\interface\XXH128Hasher.hpp">
+      <Filter>Graphics\GraphicsTools\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Graphics\HLSL2GLSLConverterLib\interface\HLSL2GLSLConverter.h">
+      <Filter>Graphics\HLSL2GLSLConverterLib\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Basic\interface\BasicFileSystem.hpp">
+      <Filter>Platforms\Basic\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Basic\interface\BasicPlatformDebug.hpp">
+      <Filter>Platforms\Basic\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Basic\interface\BasicPlatformMisc.hpp">
+      <Filter>Platforms\Basic\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Basic\interface\DebugUtilities.hpp">
+      <Filter>Platforms\Basic\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Basic\interface\StandardFile.hpp">
+      <Filter>Platforms\Basic\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Win32\interface\Win32Debug.hpp">
+      <Filter>Platforms\Win32\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Win32\interface\Win32FileSystem.hpp">
+      <Filter>Platforms\Win32\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Win32\interface\Win32NativeWindow.h">
+      <Filter>Platforms\Win32\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Win32\interface\Win32PlatformDefinitions.h">
+      <Filter>Platforms\Win32\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Win32\interface\Win32PlatformMisc.hpp">
+      <Filter>Platforms\Win32\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Win32\interface\WinHPostface.h">
+      <Filter>Platforms\Win32\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\Win32\interface\WinHPreface.h">
+      <Filter>Platforms\Win32\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\interface\FileSystem.hpp">
+      <Filter>Platforms\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\interface\Intrinsics.hpp">
+      <Filter>Platforms\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\interface\NativeWindow.h">
+      <Filter>Platforms\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\interface\PlatformDebug.hpp">
+      <Filter>Platforms\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\interface\PlatformDefinitions.h">
+      <Filter>Platforms\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Platforms\interface\PlatformMisc.hpp">
+      <Filter>Platforms\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\BasicTypes.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\CheckBaseStructAlignment.hpp">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\CommonDefinitions.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\DataBlob.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\DebugOutput.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\DefineGlobalFuncHelperMacros.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\DefineInterfaceHelperMacros.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\Errors.hpp">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\FileStream.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\FlagEnum.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\FormatString.hpp">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\InterfaceID.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\MemoryAllocator.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\Object.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\ReferenceCounters.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\UndefGlobalFuncHelperMacros.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Primitives\interface\UndefInterfaceHelperMacros.h">
+      <Filter>Primitives\interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
