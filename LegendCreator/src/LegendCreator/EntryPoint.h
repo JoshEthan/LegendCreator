@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Graphics/GraphicsEngine/interface/EngineFactory.h"
 #include "Common/interface/RefCntAutoPtr.hpp"
 #include "Graphics/GraphicsEngine/interface/RenderDevice.h"
 #include "Graphics/GraphicsEngine/interface/Shader.h"
