@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "LegendCreator/vendor/GLFW/include"
+IncludeDir["Glad"] = "LegendCreator/vendor/Glad/include"
 
 include "LegendCreator/vendor/GLFW"
+include "LegendCreator/vendor/Glad"
 
 project "LegendCreator"
 	location "LegendCreator"
@@ -37,12 +39,14 @@ project "LegendCreator"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -54,7 +58,8 @@ project "LegendCreator"
 		defines
 		{
 			"LC_PLATFORM_WINDOWS",
-			"LC_BUILD_DLL"
+			"LC_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
