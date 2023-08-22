@@ -31,6 +31,7 @@ namespace LegendCreator {
 	// Mouse SCROLLED
 	class LEGENDCREATOR_API MouseScrolledEvent : public Event
 	{
+	public:
 		MouseScrolledEvent(float xOffset, float yOffset)
 			: m_XOffset(xOffset), m_YOffset(yOffset) {}
 
