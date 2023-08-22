@@ -64,14 +64,17 @@ project "LegendCreator"
 
 	filter "configurations:Debug"
 		defines "LC_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "LC_RELEASE"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Dist"
 		defines "LC_DIST"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter { "system:windows", "configurations:Release"}
@@ -114,14 +117,17 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "LC_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "LC_RELEASE"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Dist"
 		defines "LC_DIST"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter { "system:windows", "configurations:Release"}

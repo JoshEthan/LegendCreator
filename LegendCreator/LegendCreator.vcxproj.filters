@@ -7,6 +7,12 @@
     <Filter Include="LegendCreator\Events">
       <UniqueIdentifier>{A8B1FFD2-9440-899C-3D5F-9D9729CD9942}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\LegendCreator.h" />
@@ -31,21 +37,39 @@
     <ClInclude Include="src\LegendCreator\Events\MouseEvent.h">
       <Filter>LegendCreator\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\LegendCreator\Layer.h">
+      <Filter>LegendCreator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LegendCreator\LayerStack.h">
+      <Filter>LegendCreator</Filter>
+    </ClInclude>
     <ClInclude Include="src\LegendCreator\Log.h">
       <Filter>LegendCreator</Filter>
     </ClInclude>
+    <ClInclude Include="src\LegendCreator\Window.h">
+      <Filter>LegendCreator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\lcpch.h" />
-    <ClInclude Include="src\LegendCreator\Window.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\LegendCreator\Application.cpp">
       <Filter>LegendCreator</Filter>
     </ClCompile>
+    <ClCompile Include="src\LegendCreator\Layer.cpp">
+      <Filter>LegendCreator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LegendCreator\LayerStack.cpp">
+      <Filter>LegendCreator</Filter>
+    </ClCompile>
     <ClCompile Include="src\LegendCreator\Log.cpp">
       <Filter>LegendCreator</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\lcpch.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
