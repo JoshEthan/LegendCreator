@@ -6,5 +6,7 @@
 #include "LegendCreator/Log.h"
 #include "LegendCreator/Events/Event.h"
 
+#include "LegendCreator/ImGui/ImGuiLayer.h"
+
 // ENTRY POINT
 #include "LegendCreator/EntryPoint.h"

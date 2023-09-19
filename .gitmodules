@@ -4,3 +4,9 @@
 [submodule "LegendCreator/vendor/GLFW"]
 	path = LegendCreator/vendor/GLFW
 	url = https://github.com/JoshEthan/glfw.git
+[submodule "LegenCreator/vendor/imgui"]
+	path = LegenCreator/vendor/imgui
+	url = https://github.com/JoshEthan/imgui.git
+[submodule "LegendCreator/vendor/imgui"]
+	path = LegendCreator/vendor/imgui
+	url = https://github.com/JoshEthan/imgui.git
